@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--
+The Great Race
+CIS 370-898
+Kshitij Sethi
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Great Race</title>
+
+    <link rel="stylesheet" href="index.css">
+
+  </head>
+  <body onload="setUp()">
+    <input type="image" src="red_light.png" id="startButton" onclick="race()">
+    <input type="image" src="green_light.png" id="startButtonTwo">
+    <div id="blue_car">
+      <img src="blue_car.png" alt="blue" id="blueImg">
+      <img src="flag.png" alt="Blue Wins" id="blueWinsImg" onclick="setUp()">
+          
+    </div>
+    <div id="green_car">
+      <img src="green_car.png" alt="green" id="greenImg">
+      <img src="flag.png" alt="Green Wins" id="greenWinsImg" onclick="setUp()">
+    </div>
+
+
+    <script src="index.js"></script>
+    
+  </body>
+</html>

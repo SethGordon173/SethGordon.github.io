@@ -1,0 +1,53 @@
+/*
+ The Great Race
+ CIS 370-898
+ Kshitij Sethi
+ */
+
+body {
+    background-image: url("cartoon_road.png");
+}
+
+#blue_car {
+    position: absolute;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#green_car {
+    position: absolute;
+    bottom: 140px;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#blueImg {
+    width: 485px;
+}
+
+#greenImg {
+    width: 500px;
+}
+
+#blueWinsImg {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    left: 500px;
+    top: -350px;
+}
+
+#greenWinsImg {
+    position: relative;
+    max-width: 500px;
+    max-height: 500px;
+    left: 500px;
+    top: -350px;
+}
+
+#startButton, #startButtonTwo {
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
