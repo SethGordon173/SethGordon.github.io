@@ -10,7 +10,7 @@ body {
 #red_car {
     position: absolute;
     max-width: 120px;
-    max-height: 12px;
+    max-height: 120px;
 }
 #green_car {
     position: absolute;
