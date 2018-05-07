@@ -1,21 +1,21 @@
 
 // Global Variables
-var blueDiv = document.getElementById('red_car');
+var redDiv = document.getElementById('red_car');
 var greenDiv = document.getElementById('green_car');
 var posB;
 var posG;
-var blueImage = document.getElementById('redImg');
+var redImage = document.getElementById('redImg');
 var greenImage = document.getElementById('greenImg');
 
 //To Reset Image Source
 function setUp(){
   posB = 0;
   posG = 0;
-  blueDiv.style.left = posB + 'px';
+  redDiv.style.left = posB + 'px';
   greenDiv.style.left = posG + 'px';
-  blueImage.src = "red_car.png";
+  redImage.src = "red_car.png";
   greenImage.src = "green_car.png";
-  blueImage.style.display = "block";
+  redImage.style.display = "block";
   greenImage.style.display = "block";
   document.getElementById('redWinsImg').style.display = "none";
   document.getElementById('greenWinsImg').style.display = "none";
@@ -35,13 +35,13 @@ function race() {
   function frame() {
     if (posB > 500 || posG > 500 ){
       clearInterval(timer);
-      posB > posG ? blueWins() : greenWins();
+      posB > posG ? redWins() : greenWins();
     } else {
       var randomB = Math.floor(Math.random() * 25);
       var randomG = Math.floor(Math.random() * 25);
       posB += randomB;
       posG += randomG;
-      blueDiv.style.left = posB + 'px';
+      redDiv.style.left = posB + 'px';
       greenDiv.style.left = posG + 'px';
 
     }
@@ -49,13 +49,13 @@ function race() {
 }
 
 // Winner Declared
-function blueWins(){
+function redWins(){
   greenImage.style.display = "block";
   document.getElementById('redWinsImg').style.display = "block";
     window.alert("Red wins! Click on the flag to restart.");
 }
 function greenWins(){
-  blueImage.style.display = "block";
+  redImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
     window.alert("Green wins! Click on the flag to restart.");
 }
