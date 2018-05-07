@@ -9,20 +9,20 @@ body {
 }
 #red_car {
     position: absolute;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 12px;
 }
 #green_car {
     position: absolute;
     bottom: 140px;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 120px;
+    max-height: 120px;
 }
 #redImg {
     width: 485px;
 }
 #greenImg {
-    width: 500px;
+    width: 485px;
 }
 #redWinsImg {
     position: relative;
@@ -39,7 +39,7 @@ body {
     top: -350px;
 }
 #startButton, #startButtonTwo {
-    max-height: 300px;
+    max-height: 350px;
     margin-left: auto;
     margin-right: auto;    
 }
