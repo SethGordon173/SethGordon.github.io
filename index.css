@@ -7,7 +7,7 @@
 body {
     background-image: url("cartoon_road.png");
 }
-#blue_car {
+#red_car {
     position: absolute;
     max-width: 150px;
     max-height: 150px;
@@ -18,13 +18,13 @@ body {
     max-width: 150px;
     max-height: 150px;
 }
-#blueImg {
+#redImg {
     width: 485px;
 }
 #greenImg {
     width: 500px;
 }
-#blueWinsImg {
+#redWinsImg {
     position: relative;
     max-width: 500px;
     max-height: 500px;
