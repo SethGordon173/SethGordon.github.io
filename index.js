@@ -1,10 +1,10 @@
 
 // Global Variables
-var blueDiv = document.getElementById('blue_car');
+var blueDiv = document.getElementById('red_car');
 var greenDiv = document.getElementById('green_car');
 var posB;
 var posG;
-var blueImage = document.getElementById('blueImg');
+var blueImage = document.getElementById('redImg');
 var greenImage = document.getElementById('greenImg');
 
 //To Reset Image Source
@@ -13,11 +13,11 @@ function setUp(){
   posG = 0;
   blueDiv.style.left = posB + 'px';
   greenDiv.style.left = posG + 'px';
-  blueImage.src = "blue_car.png";
+  blueImage.src = "red_car.png";
   greenImage.src = "green_car.png";
   blueImage.style.display = "block";
   greenImage.style.display = "block";
-  document.getElementById('blueWinsImg').style.display = "none";
+  document.getElementById('redWinsImg').style.display = "none";
   document.getElementById('greenWinsImg').style.display = "none";
   document.getElementById('startButton').style.display = "block";
   document.getElementById('startButtonTwo').style.display = "none";
@@ -51,8 +51,8 @@ function race() {
 // Winner Declared
 function blueWins(){
   greenImage.style.display = "block";
-  document.getElementById('blueWinsImg').style.display = "block";
-    window.alert("Blue wins! Click on the flag to restart.");
+  document.getElementById('redWinsImg').style.display = "block";
+    window.alert("Red wins! Click on the flag to restart.");
 }
 function greenWins(){
   blueImage.style.display = "block";
