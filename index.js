@@ -1,6 +1,5 @@
 
-// Global variables
-
+// Global Variables
 var blueDiv = document.getElementById('blue_car');
 var greenDiv = document.getElementById('green_car');
 var posB;
@@ -8,7 +7,7 @@ var posG;
 var blueImage = document.getElementById('blueImg');
 var greenImage = document.getElementById('greenImg');
 
-// Resets image sources and position
+//To Reset Image Source
 function setUp(){
   posB = 0;
   posG = 0;
@@ -24,14 +23,15 @@ function setUp(){
   document.getElementById('startButtonTwo').style.display = "none";
 }
 
-// Conduct "the race"
+//The Race
 function race() {
     setUp();
   document.getElementById('startButton').style.display = "none";
   document.getElementById('startButtonTwo').style.display = "block";
-// The frame() function occurs at interval
+  
   var timer = setInterval(frame, 100);
-// Moves the images to the right by a random number between 1 and 25
+  
+//Moving Images using Rng
   function frame() {
     if (posB > 500 || posG > 500 ){
       clearInterval(timer);
@@ -48,13 +48,12 @@ function race() {
   }
 }
 
-// Makes the winning image visible & hides race image
+// Winner Declared
 function blueWins(){
   greenImage.style.display = "block";
   document.getElementById('blueWinsImg').style.display = "block";
     window.alert("Blue wins! Click on the flag to restart.");
 }
-// Makes the winning image visible & hides race image
 function greenWins(){
   blueImage.style.display = "block";
   document.getElementById('greenWinsImg').style.display = "block";
